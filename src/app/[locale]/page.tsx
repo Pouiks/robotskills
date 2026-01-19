@@ -12,8 +12,14 @@ import { Link } from '@/i18n/navigation'
 import { getSiteStats } from '@/server/stats'
 import { queryPublishedPosts, isNotionConfigured } from '@/lib/notion/notionClient'
 
+import { locales } from '@/i18n/config'
+
 type Props = {
   params: Promise<{ locale: string }>
+}
+
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }))
 }
 
 export default async function HomePage({ params }: Props) {
