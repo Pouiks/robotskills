@@ -39,7 +39,7 @@ function removeLocaleFromPathname(pathname: string): string {
   return pathname
 }
 
-export async function middleware(request: NextRequest) {
+export async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl
 
   // Skip i18n for excluded paths (API, auth callbacks, static files)
