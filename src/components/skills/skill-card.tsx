@@ -1,9 +1,12 @@
-import Link from 'next/link'
+'use client'
+
 import Image from 'next/image'
 import { Download, Tag, ShieldCheck } from 'lucide-react'
+import { useLocale, useTranslations } from 'next-intl'
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { CompatibilityBadge } from './compatibility-badge'
+import { Link } from '@/i18n/navigation'
 import type { SkillWithDetails } from '@/types'
 import type { UserRobot } from '@/server/robots'
 
@@ -12,14 +15,24 @@ interface SkillCardProps {
   userRobots?: UserRobot[]
 }
 
-function formatPrice(priceCents: number): string {
-  if (priceCents === 0) return 'Gratuit'
-  return `${(priceCents / 100).toFixed(2).replace('.', ',')} €`
-}
-
 export function SkillCard({ skill, userRobots = [] }: SkillCardProps) {
+  const locale = useLocale()
+  const t = useTranslations('skills')
+
   // Un skill publié avec une version publique est considéré comme certifié OEM
   const isCertified = skill.status === 'published' && skill.latestVersion !== null
+
+  // Sélectionner le contenu selon la locale
+  const name = locale === 'en' && skill.nameEn ? skill.nameEn : skill.name
+  const shortDescription =
+    locale === 'en' && skill.shortDescriptionEn
+      ? skill.shortDescriptionEn
+      : skill.shortDescription
+
+  function formatPrice(priceCents: number): string {
+    if (priceCents === 0) return locale === 'en' ? 'Free' : 'Gratuit'
+    return `${(priceCents / 100).toFixed(2).replace('.', ',')} €`
+  }
 
   return (
     <Link href={`/skills/${skill.slug}`}>
@@ -43,9 +56,12 @@ export function SkillCard({ skill, userRobots = [] }: SkillCardProps) {
             {/* Badge certifié en haut à gauche */}
             {isCertified && (
               <div className="absolute top-3 left-3">
-                <Badge variant="secondary" className="bg-green-100 text-green-700 dark:bg-green-900/50 dark:text-green-300 border-0">
+                <Badge
+                  variant="secondary"
+                  className="bg-green-100 text-green-700 dark:bg-green-900/50 dark:text-green-300 border-0"
+                >
                   <ShieldCheck className="h-3 w-3 mr-1" />
-                  Certifié
+                  {locale === 'en' ? 'Certified' : 'Certifié'}
                 </Badge>
               </div>
             )}
@@ -55,15 +71,13 @@ export function SkillCard({ skill, userRobots = [] }: SkillCardProps) {
               {skill.iconPath ? (
                 <Image
                   src={skill.iconPath}
-                  alt={skill.name}
+                  alt={name}
                   width={80}
                   height={80}
                   className="object-cover"
                 />
               ) : (
-                <div className="text-3xl font-bold text-muted-foreground">
-                  {skill.name.charAt(0)}
-                </div>
+                <div className="text-3xl font-bold text-muted-foreground">{name.charAt(0)}</div>
               )}
             </div>
           </div>
@@ -72,12 +86,12 @@ export function SkillCard({ skill, userRobots = [] }: SkillCardProps) {
           <div className="p-4 space-y-3">
             {/* Nom */}
             <h3 className="font-semibold text-base leading-tight line-clamp-2 min-h-[2.5rem]">
-              {skill.name}
+              {name}
             </h3>
 
             {/* Description */}
             <p className="text-sm text-muted-foreground line-clamp-2 min-h-[2.5rem]">
-              {skill.shortDescription || 'Aucune description'}
+              {shortDescription || t('noDescription')}
             </p>
 
             {/* Footer */}
@@ -91,10 +105,7 @@ export function SkillCard({ skill, userRobots = [] }: SkillCardProps) {
                 )}
                 {/* Badge de compatibilité avec les robots de l'utilisateur */}
                 {userRobots.length > 0 && (
-                  <CompatibilityBadge
-                    compatibleOems={skill.compatibleOems}
-                    userRobots={userRobots}
-                  />
+                  <CompatibilityBadge compatibleOems={skill.compatibleOems} userRobots={userRobots} />
                 )}
               </div>
               <div className="flex items-center gap-1 text-xs text-muted-foreground shrink-0">

@@ -1,0 +1,714 @@
+{
+  "common": {
+    "search": "Rechercher",
+    "login": "Connexion",
+    "signup": "S'inscrire",
+    "logout": "Déconnexion",
+    "dashboard": "Dashboard",
+    "myRobots": "Mes Robots",
+    "myLibrary": "Ma Bibliothèque",
+    "developerPortal": "Portail Développeur",
+    "oemPortal": "Portail OEM",
+    "administration": "Administration",
+    "menu": "Menu",
+    "allRightsReserved": "Tous droits réservés",
+    "loading": "Chargement...",
+    "error": "Une erreur est survenue",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "view": "Voir",
+    "back": "Retour",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "submit": "Soumettre",
+    "confirm": "Confirmer"
+  },
+  "header": {
+    "store": "Store",
+    "blog": "Blog",
+    "navigation": "Menu de navigation"
+  },
+  "footer": {
+    "description": "La marketplace de référence pour les skills et addons robotiques. Étendez les capacités de vos robots en toute sécurité.",
+    "product": "Produit",
+    "categories": "Catégories",
+    "popular": "Populaires",
+    "new": "Nouveautés",
+    "developers": "Développeurs",
+    "developerProgram": "Programme Développeur",
+    "documentation": "Documentation",
+    "submissionGuide": "Guide de soumission",
+    "company": "Entreprise",
+    "about": "À propos",
+    "careers": "Carrières",
+    "contact": "Contact",
+    "terms": "Conditions d'utilisation",
+    "privacy": "Politique de confidentialité",
+    "cookies": "Cookies"
+  },
+  "home": {
+    "hero": {
+      "badge": "La marketplace robotique de référence",
+      "title": "Donnez de nouveaux",
+      "titleHighlight": "super-pouvoirs",
+      "titleEnd": "à vos robots",
+      "subtitle": "Découvrez des centaines de skills et addons pour étendre les capacités de vos robots. Installation sécurisée, validée par les constructeurs.",
+      "exploreStore": "Explorer le Store",
+      "becomeDeveloper": "Devenir Développeur"
+    },
+    "stats": {
+      "launchPhase": "Projet en phase de lancement",
+      "visitors": "Visiteurs",
+      "visitorsTooltip": "Nombre de visiteurs uniques",
+      "interested": "Intéressés",
+      "interestedTooltip": "Nombre de visites sur le Store",
+      "publishedArticles": "Articles publiés",
+      "contactedOems": "Constructeurs contactés"
+    },
+    "features": {
+      "title": "Pourquoi choisir RobotSkills ?",
+      "subtitle": "Une plateforme pensée pour les utilisateurs et les développeurs, avec la sécurité comme priorité.",
+      "security": {
+        "title": "Sécurité Maximale",
+        "description": "Chaque skill est vérifié et validé par notre équipe et les constructeurs. Votre robot est entre de bonnes mains."
+      },
+      "installation": {
+        "title": "Installation Simple",
+        "description": "Installez de nouveaux skills en quelques clics. Gérez vos addons facilement depuis votre espace personnel."
+      },
+      "community": {
+        "title": "Communauté Active",
+        "description": "Rejoignez une communauté de développeurs passionnés. Partagez, collaborez, et innovez ensemble."
+      },
+      "catalog": {
+        "title": "Catalogue Riche",
+        "description": "Des centaines de skills pour tous les usages : navigation, manipulation, communication, et plus encore."
+      }
+    },
+    "howItWorks": {
+      "title": "Comment ça marche ?",
+      "subtitle": "Installez un nouveau skill en 3 étapes simples",
+      "step1": {
+        "title": "Trouvez votre skill",
+        "description": "Parcourez notre catalogue et trouvez le skill parfait pour votre robot."
+      },
+      "step2": {
+        "title": "Appairez votre robot",
+        "description": "Connectez votre robot en toute sécurité via notre système de pairing."
+      },
+      "step3": {
+        "title": "Installez et profitez",
+        "description": "Installez le skill d'un clic et profitez des nouvelles capacités."
+      }
+    },
+    "developerCta": {
+      "title": "Vous êtes développeur ?",
+      "description": "Rejoignez notre programme développeur et publiez vos skills sur la marketplace. Accédez à une documentation complète, des outils de test, et une communauté active.",
+      "benefit1": "Plateforme de distribution sécurisée",
+      "benefit2": "Processus de validation transparent",
+      "benefit3": "Revenus sur chaque installation",
+      "benefit4": "Support technique dédié",
+      "startNow": "Commencer maintenant"
+    }
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "subtitle": "Tout ce que vous devez savoir sur le marché des robots domestiques",
+    "questions": {
+      "marketSize": {
+        "question": "Quelle est la taille réelle du marché des robots domestiques aujourd'hui ?",
+        "answer": "Le marché mondial des robots domestiques est estimé entre 10 et 14 milliards de dollars en 2024–2025 selon plusieurs cabinets d'études. Cette valeur est principalement portée par les robots utilitaires, notamment les aspirateurs robots, qui représentent la majorité des ventes et des revenus du segment."
+      },
+      "growth": {
+        "question": "Le marché des robots domestiques est-il réellement en forte croissance ?",
+        "answer": "Oui, le marché des robots domestiques connaît une croissance soutenue, avec un taux de croissance annuel composé estimé entre 15 % et 20 %. Cette croissance concerne principalement l'expansion de segments existants comme les robots de nettoyage, plutôt que l'adoption massive de robots domestiques polyvalents."
+      },
+      "households": {
+        "question": "Combien de robots domestiques sont réellement présents dans les foyers ?",
+        "answer": "Les estimations indiquent qu'environ 40 millions de robots domestiques pourraient être présents dans les foyers mondiaux autour de 2025, et plus de 50 millions d'unités d'ici 2027. Ce volume reste faible comparé aux autres équipements domestiques courants, confirmant le caractère encore marginal du marché."
+      },
+      "types": {
+        "question": "Quels types de robots domestiques dominent réellement le marché ?",
+        "answer": "Les robots domestiques les plus répandus sont les robots spécialisés, tels que les aspirateurs et laveurs de sol, les tondeuses autonomes et les robots de piscine. Ces catégories concentrent l'essentiel de l'adoption et du chiffre d'affaires, tandis que les robots plus complexes restent marginaux."
+      },
+      "niche": {
+        "question": "Pourquoi les robots domestiques restent-ils des produits de niche malgré la croissance du marché ?",
+        "answer": "Les robots domestiques restent des produits de niche car leur valeur d'usage est limitée à des tâches spécifiques, leur coût reste élevé et leur fiabilité diminue dès que les usages deviennent complexes. Pour la majorité des foyers, ces produits ne sont pas encore perçus comme indispensables."
+      },
+      "limits": {
+        "question": "Quelles sont les principales limites technologiques des robots domestiques actuels ?",
+        "answer": "Les principales limites technologiques concernent la manipulation d'objets en environnement non structuré, la compréhension du contexte domestique et la sécurité en présence d'humains. Ces contraintes expliquent pourquoi les robots domestiques évitent les interactions physiques complexes."
+      },
+      "cost": {
+        "question": "Quel est le coût réel d'un robot domestique sur le long terme ?",
+        "answer": "Le coût réel d'un robot domestique inclut le prix d'achat, la maintenance, les pièces de rechange, les mises à jour logicielles et parfois des abonnements cloud. Sur plusieurs années, le coût total de possession peut dépasser largement l'investissement initial."
+      },
+      "mainstream": {
+        "question": "Quand les robots domestiques deviendront-ils réellement grand public ?",
+        "answer": "Les robots domestiques deviendront grand public lorsque trois conditions seront réunies : une valeur d'usage claire, une sécurité maîtrisée et un coût accessible. À court et moyen terme, le marché évoluera surtout par l'amélioration progressive de robots spécialisés."
+      }
+    }
+  },
+  "store": {
+    "title": "Store",
+    "subtitle": "Découvrez tous les skills disponibles pour vos robots",
+    "searchPlaceholder": "Rechercher un skill...",
+    "filters": "Filtres",
+    "noResults": "Aucun skill trouvé",
+    "categories": "Catégories",
+    "allCategories": "Toutes les catégories",
+    "disclaimer": "Démonstration",
+    "disclaimerText": "Les skills présentés illustrent le potentiel de la plateforme lorsque l'écosystème robotique sera pleinement opérationnel.",
+    "roadmap": {
+      "title": "L'évolution de la robotique domestique",
+      "subtitle": "Comprendre la trajectoire du marché",
+      "today": "Aujourd'hui",
+      "conclusion": "L'adoption des robots domestiques ne se fait pas en un instant. Elle s'inscrit dans une",
+      "conclusionHighlight": "progression logique",
+      "conclusionEnd": ", depuis les objets connectés actuels jusqu'à des robots capables d'évoluer avec les usages.",
+      "stages": {
+        "1": {
+          "title": "Objets connectés et robots spécialisés",
+          "subtitle": "Des usages réels, déjà ancrés dans les foyers",
+          "description": "Les foyers sont déjà équipés d'objets connectés et de robots domestiques spécialisés (ménagers, entretien, surveillance). Ces solutions répondent à des besoins concrets, mais restent limitées dans leurs capacités d'évolution."
+        },
+        "2": {
+          "title": "Premières unités intelligentes",
+          "subtitle": "Tests, pilotes et déploiements contrôlés",
+          "description": "Des robots plus avancés commencent à être testés dans certains foyers ou environnements pilotes. Ces premières unités permettent de valider des technologies plus complexes et d'identifier les usages pertinents."
+        },
+        "3": {
+          "title": "Industrialisation progressive",
+          "subtitle": "Passage à l'échelle piloté par les constructeurs",
+          "description": "Les constructeurs engagent des stratégies d'industrialisation sur plusieurs années afin de rendre les robots plus fiables, plus accessibles et déployables à grande échelle."
+        },
+        "4": {
+          "title": "Adoption et capacités étendues",
+          "subtitle": "Vers des robots évolutifs et personnalisables",
+          "description": "Une fois largement déployés, les robots domestiques deviennent des plateformes évolutives. Les utilisateurs peuvent découvrir, activer et enrichir leurs robots avec de nouvelles capacités."
+        }
+      }
+    },
+    "search": {
+      "sortBy": "Trier par",
+      "mostRecent": "Plus récents",
+      "mostPopular": "Plus populaires",
+      "nameAZ": "Nom (A-Z)",
+      "priceAsc": "Prix croissant",
+      "priceDesc": "Prix décroissant",
+      "price": "Prix",
+      "all": "Tous",
+      "freeOnly": "Gratuits uniquement",
+      "paidOnly": "Payants uniquement",
+      "compatibility": "Compatibilité",
+      "myRobotsOnly": "Mes robots uniquement",
+      "clear": "Effacer",
+      "resultsCount": "{count} skill{plural} trouvé{plural}",
+      "resultsFor": "pour \"{search}\"",
+      "resultsIn": "dans \"{category}\"",
+      "noResults": "Aucun skill ne correspond à vos critères",
+      "resetFilters": "Réinitialiser les filtres"
+    }
+  },
+  "auth": {
+    "loginTitle": "Bienvenue sur RobotSkills",
+    "loginSubtitle": "Connectez-vous pour accéder à votre espace personnel",
+    "signupTitle": "Créer un compte",
+    "signupSubtitle": "Inscrivez-vous pour découvrir les skills pour vos robots",
+    "email": "Email",
+    "emailPlaceholder": "vous@exemple.com",
+    "password": "Mot de passe",
+    "confirmPassword": "Confirmer le mot de passe",
+    "forgotPassword": "Mot de passe oublié ?",
+    "noAccount": "Pas encore de compte ?",
+    "hasAccount": "Déjà un compte ?",
+    "createAccount": "Créer un compte",
+    "loginButton": "Se connecter",
+    "signupButton": "Créer mon compte",
+    "continueWithGoogle": "Continuer avec Google",
+    "continueWithGithub": "Continuer avec GitHub",
+    "or": "ou",
+    "resetPassword": "Réinitialiser le mot de passe",
+    "resetPasswordSubtitle": "Entrez votre email pour recevoir un lien de réinitialisation",
+    "configRequired": "Configuration requise",
+    "configMessage": "L'authentification Supabase n'est pas configurée",
+    "configInstructions": "Pour activer l'authentification, configurez les variables d'environnement Supabase :",
+    "backToHome": "Retour à l'accueil",
+    "termsNotice": "En vous connectant, vous acceptez nos",
+    "termsLink": "Conditions d'utilisation",
+    "and": "et notre",
+    "privacyLink": "Politique de confidentialité",
+    "passwordRequirements": {
+      "length": "8 caractères minimum",
+      "uppercase": "1 majuscule",
+      "digit": "1 chiffre",
+      "special": "1 caractère spécial (!@#$%...)"
+    },
+    "passwordsMatch": "Les mots de passe correspondent",
+    "passwordsNoMatch": "Les mots de passe ne correspondent pas",
+    "errors": {
+      "notConfigured": "Authentification non configurée",
+      "fillAllFields": "Veuillez remplir tous les champs",
+      "passwordInvalid": "Le mot de passe ne respecte pas les critères de sécurité",
+      "passwordsNoMatch": "Les mots de passe ne correspondent pas",
+      "emailExists": "Cet email est déjà utilisé",
+      "invalidCredentials": "Email ou mot de passe incorrect",
+      "generic": "Une erreur est survenue"
+    },
+    "success": {
+      "accountCreated": "Compte créé ! Vérifiez votre email pour confirmer.",
+      "loginSuccess": "Connexion réussie !"
+    }
+  },
+  "about": {
+    "title": "À propos de RobotSkills",
+    "subtitle": "Notre mission est de démocratiser l'accès aux capacités robotiques avancées",
+    "badge": "Notre histoire",
+    "heroTitle": "Nous croyons au potentiel infini de la robotique",
+    "heroSubtitle": "RobotSkills est née de la conviction que les robots peuvent devenir de véritables compagnons du quotidien, à condition de leur donner les bonnes capacités.",
+    "missionTitle": "Notre mission",
+    "missionText": "Créer un écosystème où développeurs et utilisateurs peuvent collaborer pour étendre les capacités des robots, en toute sécurité et simplicité. Nous voulons démocratiser l'accès à la robotique avancée.",
+    "valuesTitle": "Nos valeurs",
+    "values": {
+      "security": {
+        "title": "Sécurité",
+        "description": "La sécurité est notre priorité absolue. Chaque skill est vérifié et validé avant publication."
+      },
+      "community": {
+        "title": "Communauté",
+        "description": "Nous construisons une communauté ouverte de développeurs et d'utilisateurs passionnés."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "Nous repoussons les limites de ce que les robots peuvent accomplir au quotidien."
+      },
+      "accessibility": {
+        "title": "Accessibilité",
+        "description": "Rendre la robotique accessible à tous, particuliers comme professionnels."
+      }
+    },
+    "teamTitle": "Notre équipe",
+    "stats": {
+      "yearCreated": "Année de création",
+      "employees": "Employés",
+      "oemPartners": "Partenaires OEM",
+      "officesWorldwide": "Bureaux dans le monde"
+    }
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Une question, une suggestion ou besoin d'aide ? Notre équipe est là pour vous.",
+    "name": "Nom complet",
+    "namePlaceholder": "Jean Dupont",
+    "email": "Email",
+    "emailPlaceholder": "jean@example.com",
+    "subject": "Sujet",
+    "subjectPlaceholder": "Sélectionnez un sujet",
+    "subjects": {
+      "support": "Support technique",
+      "sales": "Questions commerciales",
+      "partnership": "Partenariat",
+      "press": "Presse",
+      "other": "Autre"
+    },
+    "message": "Message",
+    "messagePlaceholder": "Comment pouvons-nous vous aider ?",
+    "send": "Envoyer le message",
+    "sending": "Envoi en cours...",
+    "successMessage": "Message envoyé ! Nous vous répondrons rapidement.",
+    "phone": "Téléphone",
+    "address": "Adresse",
+    "supportHours": "Horaires du support",
+    "weekdays": "Lun - Ven",
+    "weekend": "Sam - Dim",
+    "closed": "Fermé"
+  },
+  "careers": {
+    "title": "Carrières",
+    "subtitle": "Rejoignez notre équipe et participez à la révolution robotique"
+  },
+  "legal": {
+    "termsTitle": "Conditions d'utilisation",
+    "privacyTitle": "Politique de confidentialité",
+    "cookiesTitle": "Politique de cookies"
+  },
+  "dashboard": {
+    "title": "Tableau de bord",
+    "welcome": "Bienvenue",
+    "overview": "Vue d'ensemble",
+    "robots": "Robots",
+    "library": "Bibliothèque",
+    "downloads": "Téléchargements",
+    "profile": "Profil",
+    "developer": "Développeur",
+    "hello": "Bonjour, {name}",
+    "welcomeMessage": "Bienvenue sur votre espace personnel RobotSkills",
+    "myProfile": "Mon profil",
+    "myRobots": "Mes Robots",
+    "manageRobots": "Gérez vos robots appairés",
+    "myLibrary": "Ma Bibliothèque",
+    "installedSkills": "Vos skills installés",
+    "downloadHistory": "Historique des téléchargements",
+    "viewAll": "Voir tout",
+    "addRobot": "Ajouter un robot",
+    "addRobotDesc": "Appairez votre premier robot pour commencer à installer des skills",
+    "exploreStore": "Explorer le Store",
+    "exploreStoreDesc": "Découvrez des centaines de skills pour étendre les capacités de vos robots",
+    "browseStore": "Parcourir le Store",
+    "developerPortal": "Portail Développeur",
+    "areYouDeveloper": "Vous êtes développeur ?",
+    "developerAccessDesc": "Accédez à votre portail pour gérer vos skills et soumissions.",
+    "joinDeveloperDesc": "Rejoignez notre programme développeur et publiez vos propres skills sur la marketplace.",
+    "accessPortal": "Accéder au portail",
+    "joinProgram": "Rejoindre le programme",
+    "user": "utilisateur"
+  },
+  "dev": {
+    "title": "Portail Développeur",
+    "subtitle": "Publiez et gérez vos skills sur la marketplace",
+    "mySkills": "Mes Skills",
+    "newSkill": "Nouveau Skill",
+    "submissions": "Soumissions",
+    "join": {
+      "title": "Rejoindre le programme développeur",
+      "subtitle": "Créez et publiez des skills pour des milliers de robots"
+    },
+    "manageSkills": "Gérez vos skills et suivez vos soumissions",
+    "publishedSkills": "Skills publiés",
+    "pending": "En attente",
+    "thisMonth": "Ce mois",
+    "total": "total",
+    "noSkillYet": "Vous n'avez pas encore de skill",
+    "createFirstSkill": "Créer mon premier skill",
+    "noSubmission": "Aucune soumission pour le moment",
+    "recentSubmissions": "Soumissions récentes",
+    "welcomeDeveloper": "Bienvenue dans le programme développeur !",
+    "welcomeDevDesc": "Commencez par créer votre premier skill. Notre assistant vous guidera à travers les étapes : informations, médias, compatibilité, permissions et soumission.",
+    "readDocs": "Lire la documentation",
+    "viewAll": "Voir tout",
+    "downloads": "Téléchargements",
+    "status": {
+      "draft": "Brouillon",
+      "published": "Publié",
+      "submitted": "Soumis",
+      "platformReview": "Validation",
+      "oemReview": "Review OEM",
+      "approved": "Approuvé",
+      "rejected": "Rejeté",
+      "changesRequested": "Modifications"
+    }
+  },
+  "skills": {
+    "details": "Détails",
+    "install": "Installer",
+    "download": "Télécharger",
+    "compatibility": "Compatibilité",
+    "version": "Version",
+    "author": "Auteur",
+    "category": "Catégorie",
+    "downloads": "Téléchargements",
+    "rating": "Note",
+    "description": "Description",
+    "requirements": "Prérequis",
+    "changelog": "Historique des versions",
+    "noDescription": "Aucune description",
+    "certified": "Certifié",
+    "free": "Gratuit",
+    "paid": "Payant",
+    "alreadyPurchased": "Déjà acheté",
+    "canDownloadOnAllRobots": "Vous pouvez télécharger ce skill sur tous vos robots.",
+    "buy": "Acheter",
+    "installOnRobot": "Installer sur un robot",
+    "loginToDownload": "Connectez-vous pour télécharger",
+    "noRobotPaired": "Aucun robot appairé",
+    "addRobotToInstall": "Ajoutez un robot pour pouvoir installer des skills.",
+    "compatibilityNotSpecified": "Compatibilité non spécifiée",
+    "oemNotDeclared": "Ce skill n'a pas déclaré ses OEMs compatibles.",
+    "notCompatible": "Non compatible",
+    "notCompatibleWithYourRobots": "Ce skill n'est pas compatible avec vos robots.",
+    "compatibleWith": "Compatible avec",
+    "robotsCompatible": "{count} robot{plural} compatible{plural}",
+    "noVersionAvailable": "Aucune version disponible",
+    "confirmPurchase": "Confirmer l'achat",
+    "aboutToBuy": "Vous êtes sur le point d'acheter",
+    "for": "pour",
+    "total": "Total",
+    "paymentSimulation": "Ceci est une simulation de paiement. Aucune transaction réelle ne sera effectuée.",
+    "pay": "Payer",
+    "processing": "Traitement...",
+    "chooseRobot": "Choisir un robot",
+    "selectRobotToInstall": "Sélectionnez le robot sur lequel installer",
+    "selectRobot": "Sélectionnez un robot",
+    "robotWithoutName": "Robot sans nom",
+    "serialNumber": "N° série",
+    "installing": "Installation...",
+    "paymentSuccess": "Paiement effectué avec succès !",
+    "transaction": "Transaction",
+    "skillInstalled": "Skill installé avec succès !",
+    "skillAvailableOnRobot": "Le skill est maintenant disponible sur votre robot.",
+    "paymentError": "Erreur lors du paiement",
+    "downloadError": "Erreur lors du téléchargement",
+    "addRobotFirst": "Vous devez d'abord ajouter et appairer un robot",
+    "add": "Ajouter"
+  },
+  "errors": {
+    "notFound": {
+      "title": "Page non trouvée",
+      "description": "La page que vous recherchez n'existe pas ou a été déplacée.",
+      "backHome": "Retour à l'accueil"
+    },
+    "generic": {
+      "title": "Une erreur est survenue",
+      "description": "Veuillez réessayer plus tard ou contacter le support si le problème persiste."
+    }
+  },
+  "blog": {
+    "title": "Actualités & Ressources",
+    "subtitle": "Restez informé des dernières nouveautés de l'écosystème robotique",
+    "viewAll": "Voir tous les articles",
+    "noArticles": "Aucun article disponible pour le moment",
+    "pageTitle": "Blog",
+    "pageSubtitle": "Actualités, tutoriels et insights sur RobotSkills et l'univers de la robotique.",
+    "configRequired": "Configuration requise",
+    "blogNotConfigured": "Le blog n'est pas configuré. Veuillez ajouter les variables d'environnement NOTION_TOKEN et NOTION_DATABASE_ID.",
+    "error": "Erreur",
+    "loadError": "Impossible de charger les articles. Veuillez réessayer plus tard.",
+    "articlesWithTag": "{count} article{plural} avec le tag \"{tag}\"",
+    "noPublishedArticles": "Aucun article publié",
+    "comeBackSoon": "Revenez bientôt pour découvrir nos premiers articles sur la robotique et RobotSkills.",
+    "noArticlesFound": "Aucun article trouvé",
+    "noArticlesWithTag": "Aucun article avec le tag \"{tag}\". Essayez un autre filtre."
+  },
+  "robots": {
+    "title": "Mes Robots",
+    "subtitle": "Gérez vos robots et leurs appairages",
+    "addRobot": "Ajouter un robot",
+    "addFirstRobot": "Ajouter mon premier robot",
+    "noRobot": "Aucun robot",
+    "noRobotDesc": "Vous n'avez pas encore ajouté de robot. Ajoutez votre premier robot pour commencer à installer des skills.",
+    "serialNumber": "N° série",
+    "pairedOn": "Appairé le",
+    "status": {
+      "paired": "Appairé",
+      "pending": "En attente",
+      "unpaired": "Non appairé",
+      "revoked": "Révoqué"
+    }
+  },
+  "downloadsPage": {
+    "title": "Mes Téléchargements",
+    "subtitle": "Historique de tous vos téléchargements de skills",
+    "noDownloads": "Aucun téléchargement",
+    "noDownloadsDesc": "Vous n'avez pas encore téléchargé de skills. Explorez le store pour découvrir des skills pour vos robots.",
+    "exploreStore": "Explorer le Store",
+    "viewSkill": "Voir le skill"
+  },
+  "libraryPage": {
+    "title": "Ma Bibliothèque",
+    "subtitle": "Gérez vos skills installés et vos téléchargements",
+    "installed": "Installés",
+    "downloads": "Téléchargements",
+    "noSkillInstalled": "Aucun skill installé",
+    "noSkillInstalledDesc": "Vous n'avez pas encore installé de skills. Explorez le store pour trouver des skills pour vos robots.",
+    "exploreStore": "Explorer le Store",
+    "uninstall": "Désinstaller",
+    "on": "Sur",
+    "noDownloads": "Aucun téléchargement",
+    "noDownloadsDesc": "Vous n'avez pas encore téléchargé de skills.",
+    "downloadedOn": "Téléchargé le",
+    "install": "Installer"
+  },
+  "profilePage": {
+    "title": "Mon Profil",
+    "subtitle": "Gérez vos informations personnelles",
+    "personalInfo": "Informations personnelles",
+    "personalInfoDesc": "Mettez à jour votre photo et vos informations de profil",
+    "profilePicture": "Photo de profil",
+    "pictureFormats": "PNG, JPEG ou WebP. Max 2MB.",
+    "displayName": "Nom d'affichage",
+    "displayNamePlaceholder": "Votre nom",
+    "displayNameHelp": "Ce nom sera visible par les autres utilisateurs.",
+    "email": "Email",
+    "emailReadonly": "L'email ne peut pas être modifié.",
+    "profileUpdated": "Profil mis à jour",
+    "avatarUpdated": "Avatar mis à jour",
+    "saving": "Enregistrement...",
+    "saveChanges": "Enregistrer les modifications",
+    "rolesPermissions": "Rôles et permissions",
+    "rolesPermissionsDesc": "Vos rôles sur la plateforme",
+    "user": "Utilisateur",
+    "developer": "Développeur",
+    "administrator": "Administrateur",
+    "active": "Actif",
+    "notActivated": "Non activé",
+    "organizations": "Organisations"
+  },
+  "devSkillsPage": {
+    "title": "Mes Skills",
+    "skillCount": "{count} skill{plural}",
+    "publishedCount": "{count} publié{plural}",
+    "newSkill": "Nouveau Skill",
+    "search": "Rechercher...",
+    "noSkill": "Aucun skill",
+    "noSkillDesc": "Vous n'avez pas encore créé de skill. Commencez par créer votre premier skill !",
+    "createFirstSkill": "Créer mon premier skill",
+    "noDescription": "Aucune description",
+    "version": "version",
+    "versions": "versions",
+    "manage": "Gérer",
+    "continue": "Continuer",
+    "status": {
+      "draft": "Brouillon",
+      "published": "Publié",
+      "suspended": "Suspendu"
+    }
+  },
+  "devSubmissionsPage": {
+    "title": "Mes Soumissions",
+    "totalCount": "{count} soumission{plural} au total",
+    "filters": {
+      "all": "Toutes",
+      "pending": "En cours",
+      "actionRequired": "Action requise",
+      "completed": "Terminées"
+    },
+    "noSubmission": "Aucune soumission",
+    "noSubmissionInCategory": "Aucune soumission dans cette catégorie",
+    "noSubmissionDesc": "Vous n'avez pas encore soumis de skill pour validation.",
+    "tryOtherFilter": "Essayez un autre filtre ou créez un nouveau skill.",
+    "createSkill": "Créer un skill",
+    "submittedOn": "Soumis le",
+    "submit": "Soumettre",
+    "fix": "Corriger",
+    "details": "Détails",
+    "statusLegend": "Légende des statuts",
+    "status": {
+      "draft": "Brouillon",
+      "submitted": "Soumis",
+      "platformReview": "Validation auto",
+      "oemReview": "Review OEM",
+      "approved": "Approuvé",
+      "rejected": "Rejeté",
+      "changesRequested": "Modifications"
+    }
+  },
+  "docsGettingStarted": {
+    "title": "Guide de soumission",
+    "description": "Apprenez à soumettre votre skill sur le Robot Store",
+    "backToDocs": "Retour à la documentation",
+    "publishIn4Steps": "Publiez votre skill sur le Robot Store en 4 étapes.",
+    "note": "Note",
+    "noteText": "Le Robot Store est une plateforme de distribution. Le développement de skills se fait avec les outils fournis par chaque constructeur. Consultez leurs ressources pour créer votre skill avant de le soumettre ici.",
+    "step": "Étape",
+    "steps": {
+      "1": {
+        "title": "Obtenir une licence développeur",
+        "description": "Inscrivez-vous au programme développeur et activez votre licence annuelle pour accéder à la plateforme de soumission.",
+        "details": ["Créez votre compte sur le Robot Store", "Accédez à l'espace développeur", "Souscrivez à la licence développeur (99€/an)"]
+      },
+      "2": {
+        "title": "Préparer votre dossier",
+        "description": "Constituez le dossier complet de votre skill avec tous les éléments requis.",
+        "details": ["Package ZIP de votre skill (code source ou binaire)", "Fichier manifest.json avec métadonnées", "Icône (256x256) et captures d'écran (min. 3)", "Description et notes de version"]
+      },
+      "3": {
+        "title": "Choisir les constructeurs cibles",
+        "description": "Sélectionnez les marques de robots compatibles avec votre skill.",
+        "details": ["Consultez les ressources de chaque constructeur", "Vérifiez la compatibilité de votre skill", "Déclarez les permissions requises"]
+      },
+      "4": {
+        "title": "Soumettre pour validation",
+        "description": "Envoyez votre dossier pour examen par la plateforme et les OEMs.",
+        "details": ["Vérification automatique (format, sécurité)", "Revue par chaque constructeur ciblé", "Feedback et ajustements si nécessaire"]
+      }
+    },
+    "afterValidation": "Après validation",
+    "afterValidationText": "Une fois approuvé par les constructeurs ciblés, votre skill sera publié sur le store et disponible pour les utilisateurs possédant des robots compatibles.",
+    "becomeDeveloper": "Devenir développeur",
+    "usefulResources": "Ressources utiles",
+    "submissionGuidelines": "Guidelines de soumission",
+    "oemResources": "Ressources constructeurs",
+    "developerFaq": "FAQ développeurs",
+    "developerSpace": "Espace développeur"
+  },
+  "oemPortal": {
+    "title": "Portail OEM",
+    "partnerPortal": "Portail Partenaire OEM",
+    "restrictedAccess": "Accès Restreint",
+    "restrictedAccessDesc": "Cette section est réservée aux partenaires constructeurs (OEM). Si vous êtes un constructeur, contactez-nous pour créer votre compte partenaire.",
+    "contactUs": "Nous contacter",
+    "pendingReview": "En attente de review",
+    "approved": "Approuvés",
+    "rejectedModifications": "Rejetés/Modifications",
+    "submissionsToReview": "Soumissions à Reviewer",
+    "skillsAwaitingValidation": "Les skills en attente de votre validation",
+    "noPendingSubmission": "Aucune soumission en attente de review.",
+    "submittedOn": "Soumis le",
+    "review": "Reviewer",
+    "history": "Historique",
+    "processedSubmissions": "Soumissions traitées",
+    "view": "Voir",
+    "status": {
+      "pending": "En attente",
+      "approved": "Approuvé",
+      "rejected": "Rejeté",
+      "changesRequested": "Modifications"
+    }
+  },
+  "cookiesPage": {
+    "title": "Politique de cookies",
+    "description": "Politique de cookies de RobotSkills",
+    "lastUpdated": "Dernière mise à jour",
+    "whatIsCookie": "Qu'est-ce qu'un cookie ?",
+    "whatIsCookieText": "Un cookie est un petit fichier texte stocké sur votre appareil lorsque vous visitez un site web. Les cookies permettent au site de mémoriser vos actions et préférences (connexion, langue, taille de police, etc.) pendant une durée déterminée.",
+    "typesOfCookies": "Types de cookies utilisés",
+    "essentialCookies": "Cookies essentiels",
+    "essentialCookiesText": "Ces cookies sont nécessaires au fonctionnement de la Plateforme. Ils permettent :",
+    "essentialCookiesList": ["L'authentification et la gestion de session", "La sécurité de votre compte", "Le bon fonctionnement des fonctionnalités de base"],
+    "duration": "Durée",
+    "legalBasis": "Base légale",
+    "legitimateInterest": "Intérêt légitime",
+    "consent": "Consentement",
+    "performanceCookies": "Cookies de performance",
+    "performanceCookiesText": "Ces cookies nous aident à comprendre comment vous utilisez la Plateforme :",
+    "performanceCookiesList": ["Pages visitées et temps passé", "Erreurs rencontrées", "Performance des fonctionnalités"],
+    "functionalCookies": "Cookies de fonctionnalité",
+    "functionalCookiesText": "Ces cookies permettent d'améliorer votre expérience :",
+    "functionalCookiesList": ["Mémorisation de vos préférences", "Personnalisation de l'interface", "Historique de recherche"],
+    "thirdPartyCookies": "Cookies tiers",
+    "thirdPartyCookiesText": "Nous utilisons des services tiers qui peuvent déposer des cookies :",
+    "service": "Service",
+    "purpose": "Finalité",
+    "policy": "Politique",
+    "authentication": "Authentification",
+    "analytics": "Analytics",
+    "see": "Voir",
+    "manageCookies": "Gestion des cookies",
+    "manageCookiesText": "Vous pouvez gérer vos préférences de cookies à tout moment :",
+    "manageCookiesList": ["Via la bannière de consentement sur notre site", "Dans les paramètres de votre navigateur"],
+    "disableInBrowser": "Désactiver les cookies dans votre navigateur",
+    "refusalConsequences": "Conséquences du refus",
+    "refusalConsequencesText": "Si vous refusez certains cookies, certaines fonctionnalités de la Plateforme peuvent ne pas fonctionner correctement :",
+    "refusalConsequencesList": ["Vous devrez vous reconnecter à chaque visite", "Vos préférences ne seront pas mémorisées", "Certaines fonctionnalités personnalisées seront désactivées"],
+    "modifications": "Modifications",
+    "modificationsText": "Cette politique peut être mise à jour pour refléter les changements dans notre utilisation des cookies. La date de dernière mise à jour est indiquée en haut de page.",
+    "contact": "Contact",
+    "contactText": "Pour toute question concernant notre utilisation des cookies, contactez-nous à privacy@robotskills.io."
+  },
+  "seo": {
+    "home": {
+      "title": "RobotSkills - Marketplace de Skills Robotiques",
+      "description": "La marketplace de référence pour les skills et addons robotiques. Étendez les capacités de vos robots en toute sécurité."
+    },
+    "store": {
+      "title": "Store - Skills et Addons",
+      "description": "Découvrez tous les skills disponibles pour vos robots. Navigation, manipulation, communication et plus encore."
+    },
+    "about": {
+      "title": "À propos",
+      "description": "Découvrez la mission et l'équipe de RobotSkills, la marketplace de référence pour les skills robotiques."
+    }
+  }
+}

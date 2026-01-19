@@ -1,32 +1,35 @@
-import Link from 'next/link'
 import { Bot } from 'lucide-react'
+import { getTranslations } from 'next-intl/server'
+import { Link } from '@/i18n/navigation'
 
-const footerLinks = {
-  product: [
-    { name: 'Store', href: '/store' },
-    { name: 'Catégories', href: '/store?view=categories' },
-    { name: 'Populaires', href: '/store?sort=popular' },
-    { name: 'Nouveautés', href: '/store?sort=recent' },
-  ],
-  developers: [
-    { name: 'Programme Développeur', href: '/dev' },
-    { name: 'Documentation', href: '/docs' },
-    { name: 'Guide de soumission', href: '/docs/getting-started' },
-  ],
-  company: [
-    { name: 'À propos', href: '/about' },
-    { name: 'Blog', href: '/blog' },
-    { name: 'Carrières', href: '/careers' },
-    { name: 'Contact', href: '/contact' },
-  ],
-  legal: [
-    { name: 'Conditions d\'utilisation', href: '/terms' },
-    { name: 'Politique de confidentialité', href: '/privacy' },
-    { name: 'Cookies', href: '/cookies' },
-  ],
-}
+export async function Footer() {
+  const t = await getTranslations()
 
-export function Footer() {
+  const footerLinks = {
+    product: [
+      { name: t('header.store'), href: '/store' },
+      { name: t('footer.categories'), href: '/store?view=categories' },
+      { name: t('footer.popular'), href: '/store?sort=popular' },
+      { name: t('footer.new'), href: '/store?sort=recent' },
+    ],
+    developers: [
+      { name: t('footer.developerProgram'), href: '/dev' },
+      { name: t('footer.documentation'), href: '/docs' },
+      { name: t('footer.submissionGuide'), href: '/docs/getting-started' },
+    ],
+    company: [
+      { name: t('footer.about'), href: '/about' },
+      { name: t('header.blog'), href: '/blog' },
+      { name: t('footer.careers'), href: '/careers' },
+      { name: t('footer.contact'), href: '/contact' },
+    ],
+    legal: [
+      { name: t('footer.terms'), href: '/terms' },
+      { name: t('footer.privacy'), href: '/privacy' },
+      { name: t('footer.cookies'), href: '/cookies' },
+    ],
+  }
+
   return (
     <footer className="border-t bg-muted/40">
       <div className="container py-12 md:py-16">
@@ -40,14 +43,13 @@ export function Footer() {
               <span>RobotSkills</span>
             </Link>
             <p className="text-sm text-muted-foreground max-w-xs">
-              La marketplace de référence pour les skills et addons robotiques. 
-              Étendez les capacités de vos robots en toute sécurité.
+              {t('footer.description')}
             </p>
           </div>
 
           {/* Product */}
           <div>
-            <h3 className="font-semibold mb-4">Produit</h3>
+            <h3 className="font-semibold mb-4">{t('footer.product')}</h3>
             <ul className="space-y-3">
               {footerLinks.product.map((link) => (
                 <li key={link.name}>
@@ -64,7 +66,7 @@ export function Footer() {
 
           {/* Developers */}
           <div>
-            <h3 className="font-semibold mb-4">Développeurs</h3>
+            <h3 className="font-semibold mb-4">{t('footer.developers')}</h3>
             <ul className="space-y-3">
               {footerLinks.developers.map((link) => (
                 <li key={link.name}>
@@ -81,7 +83,7 @@ export function Footer() {
 
           {/* Company */}
           <div>
-            <h3 className="font-semibold mb-4">Entreprise</h3>
+            <h3 className="font-semibold mb-4">{t('footer.company')}</h3>
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
@@ -100,7 +102,7 @@ export function Footer() {
         {/* Bottom */}
         <div className="mt-12 pt-8 border-t flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} RobotSkills. Tous droits réservés.
+            © {new Date().getFullYear()} RobotSkills. {t('common.allRightsReserved')}
           </p>
           <div className="flex gap-6">
             {footerLinks.legal.map((link) => (

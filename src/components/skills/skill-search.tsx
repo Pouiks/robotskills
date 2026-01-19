@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react'
 import { Search, X, SlidersHorizontal } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 import { Input } from '@/components/ui/input'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
@@ -14,7 +15,7 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
 import { SkillCard } from './skill-card'
-import type { SkillWithDetails, SkillCategory } from '@/types'
+import type { SkillWithDetails } from '@/types'
 import { SKILL_CATEGORIES } from '@/types'
 import type { UserRobot } from '@/server/robots'
 
@@ -29,6 +30,7 @@ type SortOption = 'recent' | 'popular' | 'price-asc' | 'price-desc' | 'name'
 type PriceFilter = 'all' | 'free' | 'paid'
 
 export function SkillSearch({ skills, initialCategory, initialSearch, userRobots = [] }: SkillSearchProps) {
+  const t = useTranslations('store')
   const [search, setSearch] = useState(initialSearch || '')
   const [selectedCategory, setSelectedCategory] = useState<string | null>(initialCategory || null)
   const [sortBy, setSortBy] = useState<SortOption>('recent')
@@ -36,10 +38,7 @@ export function SkillSearch({ skills, initialCategory, initialSearch, userRobots
   const [compatibleOnly, setCompatibleOnly] = useState(false)
 
   // Extraire les OEM IDs des robots de l'utilisateur
-  const userOemIds = useMemo(() => 
-    userRobots.map((robot) => robot.oem.id),
-    [userRobots]
-  )
+  const userOemIds = useMemo(() => userRobots.map((robot) => robot.oem.id), [userRobots])
 
   const filteredSkills = useMemo(() => {
     let result = [...skills]
@@ -110,7 +109,8 @@ export function SkillSearch({ skills, initialCategory, initialSearch, userRobots
     setCompatibleOnly(false)
   }
 
-  const hasActiveFilters = search || selectedCategory || sortBy !== 'recent' || priceFilter !== 'all' || compatibleOnly
+  const hasActiveFilters =
+    search || selectedCategory || sortBy !== 'recent' || priceFilter !== 'all' || compatibleOnly
 
   return (
     <div>
@@ -119,7 +119,7 @@ export function SkillSearch({ skills, initialCategory, initialSearch, userRobots
         <div className="flex-1 max-w-md relative">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
           <Input
-            placeholder="Rechercher un skill..."
+            placeholder={t('searchPlaceholder')}
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             className="pl-9 pr-9"
@@ -140,72 +140,72 @@ export function SkillSearch({ skills, initialCategory, initialSearch, userRobots
             <DropdownMenuTrigger asChild>
               <Button variant="outline" size="default">
                 <SlidersHorizontal className="h-4 w-4 mr-2" />
-                Filtres
+                {t('filters')}
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end" className="w-56">
-              <DropdownMenuLabel>Trier par</DropdownMenuLabel>
+              <DropdownMenuLabel>{t('search.sortBy')}</DropdownMenuLabel>
               <DropdownMenuCheckboxItem
                 checked={sortBy === 'recent'}
                 onCheckedChange={() => setSortBy('recent')}
               >
-                Plus récents
+                {t('search.mostRecent')}
               </DropdownMenuCheckboxItem>
               <DropdownMenuCheckboxItem
                 checked={sortBy === 'popular'}
                 onCheckedChange={() => setSortBy('popular')}
               >
-                Plus populaires
+                {t('search.mostPopular')}
               </DropdownMenuCheckboxItem>
               <DropdownMenuCheckboxItem
                 checked={sortBy === 'name'}
                 onCheckedChange={() => setSortBy('name')}
               >
-                Nom (A-Z)
+                {t('search.nameAZ')}
               </DropdownMenuCheckboxItem>
               <DropdownMenuCheckboxItem
                 checked={sortBy === 'price-asc'}
                 onCheckedChange={() => setSortBy('price-asc')}
               >
-                Prix croissant
+                {t('search.priceAsc')}
               </DropdownMenuCheckboxItem>
               <DropdownMenuCheckboxItem
                 checked={sortBy === 'price-desc'}
                 onCheckedChange={() => setSortBy('price-desc')}
               >
-                Prix décroissant
+                {t('search.priceDesc')}
               </DropdownMenuCheckboxItem>
 
               <DropdownMenuSeparator />
-              <DropdownMenuLabel>Prix</DropdownMenuLabel>
+              <DropdownMenuLabel>{t('search.price')}</DropdownMenuLabel>
               <DropdownMenuCheckboxItem
                 checked={priceFilter === 'all'}
                 onCheckedChange={() => setPriceFilter('all')}
               >
-                Tous
+                {t('search.all')}
               </DropdownMenuCheckboxItem>
               <DropdownMenuCheckboxItem
                 checked={priceFilter === 'free'}
                 onCheckedChange={() => setPriceFilter('free')}
               >
-                Gratuits uniquement
+                {t('search.freeOnly')}
               </DropdownMenuCheckboxItem>
               <DropdownMenuCheckboxItem
                 checked={priceFilter === 'paid'}
                 onCheckedChange={() => setPriceFilter('paid')}
               >
-                Payants uniquement
+                {t('search.paidOnly')}
               </DropdownMenuCheckboxItem>
 
               {userRobots.length > 0 && (
                 <>
                   <DropdownMenuSeparator />
-                  <DropdownMenuLabel>Compatibilité</DropdownMenuLabel>
+                  <DropdownMenuLabel>{t('search.compatibility')}</DropdownMenuLabel>
                   <DropdownMenuCheckboxItem
                     checked={compatibleOnly}
                     onCheckedChange={(checked) => setCompatibleOnly(checked === true)}
                   >
-                    Mes robots uniquement
+                    {t('search.myRobotsOnly')}
                   </DropdownMenuCheckboxItem>
                 </>
               )}
@@ -215,7 +215,7 @@ export function SkillSearch({ skills, initialCategory, initialSearch, userRobots
           {hasActiveFilters && (
             <Button variant="ghost" size="default" onClick={clearFilters}>
               <X className="h-4 w-4 mr-2" />
-              Effacer
+              {t('search.clear')}
             </Button>
           )}
         </div>
@@ -228,7 +228,7 @@ export function SkillSearch({ skills, initialCategory, initialSearch, userRobots
           className="cursor-pointer"
           onClick={() => handleCategoryClick(null)}
         >
-          Tous
+          {t('search.all')}
         </Badge>
         {SKILL_CATEGORIES.map((cat) => (
           <Badge
@@ -244,20 +244,18 @@ export function SkillSearch({ skills, initialCategory, initialSearch, userRobots
 
       {/* Results count */}
       <div className="text-sm text-muted-foreground mb-4">
-        {filteredSkills.length} skill{filteredSkills.length > 1 ? 's' : ''} trouvé
-        {filteredSkills.length > 1 ? 's' : ''}
-        {search && ` pour "${search}"`}
-        {selectedCategory && ` dans "${selectedCategory}"`}
+        {filteredSkills.length} skill{filteredSkills.length > 1 ? 's' : ''}{' '}
+        {filteredSkills.length > 1 ? t('search.resultsCount', { count: filteredSkills.length, plural: 's' }).split(' ').slice(-1) : t('search.resultsCount', { count: filteredSkills.length, plural: '' }).split(' ').slice(-1)}
+        {search && ` ${t('search.resultsFor', { search })}`}
+        {selectedCategory && ` ${t('search.resultsIn', { category: selectedCategory })}`}
       </div>
 
       {/* Skills Grid */}
       {filteredSkills.length === 0 ? (
         <div className="text-center py-12">
-          <div className="text-muted-foreground mb-4">
-            Aucun skill ne correspond à vos critères
-          </div>
+          <div className="text-muted-foreground mb-4">{t('search.noResults')}</div>
           <Button variant="outline" onClick={clearFilters}>
-            Réinitialiser les filtres
+            {t('search.resetFilters')}
           </Button>
         </div>
       ) : (

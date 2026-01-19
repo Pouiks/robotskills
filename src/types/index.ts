@@ -53,6 +53,10 @@ export interface SkillWithDetails {
     id: string
     brandName: string
   }[]
+  // Traductions anglaises
+  nameEn: string | null
+  shortDescriptionEn: string | null
+  descriptionMdEn: string | null
 }
 
 // Types pour les robots enrichis

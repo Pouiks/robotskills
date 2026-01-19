@@ -1,0 +1,714 @@
+{
+  "common": {
+    "search": "Search",
+    "login": "Login",
+    "signup": "Sign up",
+    "logout": "Logout",
+    "dashboard": "Dashboard",
+    "myRobots": "My Robots",
+    "myLibrary": "My Library",
+    "developerPortal": "Developer Portal",
+    "oemPortal": "OEM Portal",
+    "administration": "Administration",
+    "menu": "Menu",
+    "allRightsReserved": "All rights reserved",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "confirm": "Confirm"
+  },
+  "header": {
+    "store": "Store",
+    "blog": "Blog",
+    "navigation": "Navigation menu"
+  },
+  "footer": {
+    "description": "The reference marketplace for robotic skills and addons. Extend your robots capabilities safely.",
+    "product": "Product",
+    "categories": "Categories",
+    "popular": "Popular",
+    "new": "New",
+    "developers": "Developers",
+    "developerProgram": "Developer Program",
+    "documentation": "Documentation",
+    "submissionGuide": "Submission Guide",
+    "company": "Company",
+    "about": "About",
+    "careers": "Careers",
+    "contact": "Contact",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "cookies": "Cookies"
+  },
+  "home": {
+    "hero": {
+      "badge": "The reference robotic marketplace",
+      "title": "Give new",
+      "titleHighlight": "superpowers",
+      "titleEnd": "to your robots",
+      "subtitle": "Discover hundreds of skills and addons to extend your robots capabilities. Secure installation, validated by manufacturers.",
+      "exploreStore": "Explore the Store",
+      "becomeDeveloper": "Become a Developer"
+    },
+    "stats": {
+      "launchPhase": "Project in launch phase",
+      "visitors": "Visitors",
+      "visitorsTooltip": "Number of unique visitors",
+      "interested": "Interested",
+      "interestedTooltip": "Number of Store visits",
+      "publishedArticles": "Published articles",
+      "contactedOems": "Contacted manufacturers"
+    },
+    "features": {
+      "title": "Why choose RobotSkills?",
+      "subtitle": "A platform designed for users and developers, with security as a priority.",
+      "security": {
+        "title": "Maximum Security",
+        "description": "Each skill is verified and validated by our team and manufacturers. Your robot is in good hands."
+      },
+      "installation": {
+        "title": "Simple Installation",
+        "description": "Install new skills in a few clicks. Easily manage your addons from your personal space."
+      },
+      "community": {
+        "title": "Active Community",
+        "description": "Join a community of passionate developers. Share, collaborate, and innovate together."
+      },
+      "catalog": {
+        "title": "Rich Catalog",
+        "description": "Hundreds of skills for all uses: navigation, manipulation, communication, and more."
+      }
+    },
+    "howItWorks": {
+      "title": "How does it work?",
+      "subtitle": "Install a new skill in 3 simple steps",
+      "step1": {
+        "title": "Find your skill",
+        "description": "Browse our catalog and find the perfect skill for your robot."
+      },
+      "step2": {
+        "title": "Pair your robot",
+        "description": "Connect your robot securely through our pairing system."
+      },
+      "step3": {
+        "title": "Install and enjoy",
+        "description": "Install the skill with one click and enjoy the new capabilities."
+      }
+    },
+    "developerCta": {
+      "title": "Are you a developer?",
+      "description": "Join our developer program and publish your skills on the marketplace. Access comprehensive documentation, testing tools, and an active community.",
+      "benefit1": "Secure distribution platform",
+      "benefit2": "Transparent validation process",
+      "benefit3": "Revenue on every installation",
+      "benefit4": "Dedicated technical support",
+      "startNow": "Start now"
+    }
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "subtitle": "Everything you need to know about the domestic robot market",
+    "questions": {
+      "marketSize": {
+        "question": "What is the real size of the domestic robot market today?",
+        "answer": "The global domestic robot market is estimated between $10 and $14 billion in 2024-2025 according to several research firms. This value is mainly driven by utility robots, particularly robot vacuums, which account for the majority of sales and revenue in the segment."
+      },
+      "growth": {
+        "question": "Is the domestic robot market really growing rapidly?",
+        "answer": "Yes, the domestic robot market is experiencing sustained growth, with an estimated compound annual growth rate between 15% and 20%. This growth mainly concerns the expansion of existing segments like cleaning robots, rather than mass adoption of versatile domestic robots."
+      },
+      "households": {
+        "question": "How many domestic robots are actually present in households?",
+        "answer": "Estimates indicate that approximately 40 million domestic robots could be present in households worldwide around 2025, and more than 50 million units by 2027. This volume remains low compared to other common household equipment, confirming the still marginal nature of the market."
+      },
+      "types": {
+        "question": "What types of domestic robots actually dominate the market?",
+        "answer": "The most common domestic robots are specialized robots, such as vacuums and floor washers, autonomous lawn mowers, and pool robots. These categories concentrate most of the adoption and revenue, while more complex robots remain marginal."
+      },
+      "niche": {
+        "question": "Why do domestic robots remain niche products despite market growth?",
+        "answer": "Domestic robots remain niche products because their use value is limited to specific tasks, their cost remains high, and their reliability decreases when uses become complex. For most households, these products are not yet perceived as essential."
+      },
+      "limits": {
+        "question": "What are the main technological limitations of current domestic robots?",
+        "answer": "The main technological limitations concern object manipulation in unstructured environments, understanding the domestic context, and safety in the presence of humans. These constraints explain why domestic robots avoid complex physical interactions."
+      },
+      "cost": {
+        "question": "What is the real long-term cost of a domestic robot?",
+        "answer": "The real cost of a domestic robot includes the purchase price, maintenance, spare parts, software updates, and sometimes cloud subscriptions. Over several years, the total cost of ownership can far exceed the initial investment."
+      },
+      "mainstream": {
+        "question": "When will domestic robots really become mainstream?",
+        "answer": "Domestic robots will become mainstream when three conditions are met: clear use value, controlled safety, and accessible cost. In the short and medium term, the market will evolve mainly through gradual improvement of specialized robots."
+      }
+    }
+  },
+  "store": {
+    "title": "Store",
+    "subtitle": "Discover all available skills for your robots",
+    "searchPlaceholder": "Search for a skill...",
+    "filters": "Filters",
+    "noResults": "No skills found",
+    "categories": "Categories",
+    "allCategories": "All categories",
+    "disclaimer": "Demonstration",
+    "disclaimerText": "The skills shown illustrate the potential of the platform when the robotic ecosystem is fully operational.",
+    "roadmap": {
+      "title": "The evolution of domestic robotics",
+      "subtitle": "Understanding the market trajectory",
+      "today": "Today",
+      "conclusion": "The adoption of domestic robots does not happen instantly. It follows a",
+      "conclusionHighlight": "logical progression",
+      "conclusionEnd": ", from current connected devices to robots capable of evolving with usage.",
+      "stages": {
+        "1": {
+          "title": "Connected devices and specialized robots",
+          "subtitle": "Real uses, already established in households",
+          "description": "Households are already equipped with connected devices and specialized domestic robots (cleaning, maintenance, surveillance). These solutions meet concrete needs but remain limited in their ability to evolve."
+        },
+        "2": {
+          "title": "First intelligent units",
+          "subtitle": "Tests, pilots and controlled deployments",
+          "description": "More advanced robots are beginning to be tested in certain homes or pilot environments. These first units validate more complex technologies and identify relevant uses."
+        },
+        "3": {
+          "title": "Progressive industrialization",
+          "subtitle": "Scaling up driven by manufacturers",
+          "description": "Manufacturers are implementing industrialization strategies over several years to make robots more reliable, more accessible and deployable at scale."
+        },
+        "4": {
+          "title": "Adoption and extended capabilities",
+          "subtitle": "Towards evolving and customizable robots",
+          "description": "Once widely deployed, domestic robots become evolving platforms. Users can discover, activate and enrich their robots with new capabilities."
+        }
+      }
+    },
+    "search": {
+      "sortBy": "Sort by",
+      "mostRecent": "Most recent",
+      "mostPopular": "Most popular",
+      "nameAZ": "Name (A-Z)",
+      "priceAsc": "Price ascending",
+      "priceDesc": "Price descending",
+      "price": "Price",
+      "all": "All",
+      "freeOnly": "Free only",
+      "paidOnly": "Paid only",
+      "compatibility": "Compatibility",
+      "myRobotsOnly": "My robots only",
+      "clear": "Clear",
+      "resultsCount": "{count} skill{plural} found",
+      "resultsFor": "for \"{search}\"",
+      "resultsIn": "in \"{category}\"",
+      "noResults": "No skills match your criteria",
+      "resetFilters": "Reset filters"
+    }
+  },
+  "auth": {
+    "loginTitle": "Welcome to RobotSkills",
+    "loginSubtitle": "Sign in to access your personal space",
+    "signupTitle": "Create an account",
+    "signupSubtitle": "Sign up to discover skills for your robots",
+    "email": "Email",
+    "emailPlaceholder": "you@example.com",
+    "password": "Password",
+    "confirmPassword": "Confirm password",
+    "forgotPassword": "Forgot password?",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "createAccount": "Create an account",
+    "loginButton": "Sign in",
+    "signupButton": "Create my account",
+    "continueWithGoogle": "Continue with Google",
+    "continueWithGithub": "Continue with GitHub",
+    "or": "or",
+    "resetPassword": "Reset password",
+    "resetPasswordSubtitle": "Enter your email to receive a reset link",
+    "configRequired": "Configuration required",
+    "configMessage": "Supabase authentication is not configured",
+    "configInstructions": "To enable authentication, configure the Supabase environment variables:",
+    "backToHome": "Back to home",
+    "termsNotice": "By signing in, you agree to our",
+    "termsLink": "Terms of Service",
+    "and": "and our",
+    "privacyLink": "Privacy Policy",
+    "passwordRequirements": {
+      "length": "8 characters minimum",
+      "uppercase": "1 uppercase letter",
+      "digit": "1 digit",
+      "special": "1 special character (!@#$%...)"
+    },
+    "passwordsMatch": "Passwords match",
+    "passwordsNoMatch": "Passwords do not match",
+    "errors": {
+      "notConfigured": "Authentication not configured",
+      "fillAllFields": "Please fill in all fields",
+      "passwordInvalid": "Password does not meet security requirements",
+      "passwordsNoMatch": "Passwords do not match",
+      "emailExists": "This email is already in use",
+      "invalidCredentials": "Invalid email or password",
+      "generic": "An error occurred"
+    },
+    "success": {
+      "accountCreated": "Account created! Check your email to confirm.",
+      "loginSuccess": "Login successful!"
+    }
+  },
+  "about": {
+    "title": "About RobotSkills",
+    "subtitle": "Our mission is to democratize access to advanced robotic capabilities",
+    "badge": "Our story",
+    "heroTitle": "We believe in the infinite potential of robotics",
+    "heroSubtitle": "RobotSkills was born from the belief that robots can become true companions in daily life, provided they are given the right capabilities.",
+    "missionTitle": "Our mission",
+    "missionText": "Create an ecosystem where developers and users can collaborate to extend robot capabilities, safely and simply. We want to democratize access to advanced robotics.",
+    "valuesTitle": "Our values",
+    "values": {
+      "security": {
+        "title": "Security",
+        "description": "Security is our absolute priority. Each skill is verified and validated before publication."
+      },
+      "community": {
+        "title": "Community",
+        "description": "We are building an open community of passionate developers and users."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "We push the boundaries of what robots can accomplish in daily life."
+      },
+      "accessibility": {
+        "title": "Accessibility",
+        "description": "Making robotics accessible to everyone, individuals and professionals alike."
+      }
+    },
+    "teamTitle": "Our team",
+    "stats": {
+      "yearCreated": "Year created",
+      "employees": "Employees",
+      "oemPartners": "OEM Partners",
+      "officesWorldwide": "Offices worldwide"
+    }
+  },
+  "contact": {
+    "title": "Contact us",
+    "subtitle": "Have a question, suggestion, or need help? Our team is here for you.",
+    "name": "Full name",
+    "namePlaceholder": "John Doe",
+    "email": "Email",
+    "emailPlaceholder": "john@example.com",
+    "subject": "Subject",
+    "subjectPlaceholder": "Select a subject",
+    "subjects": {
+      "support": "Technical support",
+      "sales": "Sales questions",
+      "partnership": "Partnership",
+      "press": "Press",
+      "other": "Other"
+    },
+    "message": "Message",
+    "messagePlaceholder": "How can we help you?",
+    "send": "Send message",
+    "sending": "Sending...",
+    "successMessage": "Message sent! We will get back to you shortly.",
+    "phone": "Phone",
+    "address": "Address",
+    "supportHours": "Support hours",
+    "weekdays": "Mon - Fri",
+    "weekend": "Sat - Sun",
+    "closed": "Closed"
+  },
+  "careers": {
+    "title": "Careers",
+    "subtitle": "Join our team and be part of the robotic revolution"
+  },
+  "legal": {
+    "termsTitle": "Terms of Service",
+    "privacyTitle": "Privacy Policy",
+    "cookiesTitle": "Cookie Policy"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome",
+    "overview": "Overview",
+    "robots": "Robots",
+    "library": "Library",
+    "downloads": "Downloads",
+    "profile": "Profile",
+    "developer": "Developer",
+    "hello": "Hello, {name}",
+    "welcomeMessage": "Welcome to your RobotSkills personal space",
+    "myProfile": "My profile",
+    "myRobots": "My Robots",
+    "manageRobots": "Manage your paired robots",
+    "myLibrary": "My Library",
+    "installedSkills": "Your installed skills",
+    "downloadHistory": "Download history",
+    "viewAll": "View all",
+    "addRobot": "Add a robot",
+    "addRobotDesc": "Pair your first robot to start installing skills",
+    "exploreStore": "Explore the Store",
+    "exploreStoreDesc": "Discover hundreds of skills to extend your robots capabilities",
+    "browseStore": "Browse the Store",
+    "developerPortal": "Developer Portal",
+    "areYouDeveloper": "Are you a developer?",
+    "developerAccessDesc": "Access your portal to manage your skills and submissions.",
+    "joinDeveloperDesc": "Join our developer program and publish your own skills on the marketplace.",
+    "accessPortal": "Access portal",
+    "joinProgram": "Join the program",
+    "user": "user"
+  },
+  "dev": {
+    "title": "Developer Portal",
+    "subtitle": "Publish and manage your skills on the marketplace",
+    "mySkills": "My Skills",
+    "newSkill": "New Skill",
+    "submissions": "Submissions",
+    "join": {
+      "title": "Join the developer program",
+      "subtitle": "Create and publish skills for thousands of robots"
+    },
+    "manageSkills": "Manage your skills and track your submissions",
+    "publishedSkills": "Published skills",
+    "pending": "Pending",
+    "thisMonth": "This month",
+    "total": "total",
+    "noSkillYet": "You don't have any skill yet",
+    "createFirstSkill": "Create my first skill",
+    "noSubmission": "No submission yet",
+    "recentSubmissions": "Recent submissions",
+    "welcomeDeveloper": "Welcome to the developer program!",
+    "welcomeDevDesc": "Start by creating your first skill. Our wizard will guide you through the steps: information, media, compatibility, permissions and submission.",
+    "readDocs": "Read the documentation",
+    "viewAll": "View all",
+    "downloads": "Downloads",
+    "status": {
+      "draft": "Draft",
+      "published": "Published",
+      "submitted": "Submitted",
+      "platformReview": "Validation",
+      "oemReview": "OEM Review",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "changesRequested": "Changes Requested"
+    }
+  },
+  "skills": {
+    "details": "Details",
+    "install": "Install",
+    "download": "Download",
+    "compatibility": "Compatibility",
+    "version": "Version",
+    "author": "Author",
+    "category": "Category",
+    "downloads": "Downloads",
+    "rating": "Rating",
+    "description": "Description",
+    "requirements": "Requirements",
+    "changelog": "Changelog",
+    "noDescription": "No description",
+    "certified": "Certified",
+    "free": "Free",
+    "paid": "Paid",
+    "alreadyPurchased": "Already purchased",
+    "canDownloadOnAllRobots": "You can download this skill on all your robots.",
+    "buy": "Buy",
+    "installOnRobot": "Install on a robot",
+    "loginToDownload": "Login to download",
+    "noRobotPaired": "No robot paired",
+    "addRobotToInstall": "Add a robot to install skills.",
+    "compatibilityNotSpecified": "Compatibility not specified",
+    "oemNotDeclared": "This skill has not declared its compatible OEMs.",
+    "notCompatible": "Not compatible",
+    "notCompatibleWithYourRobots": "This skill is not compatible with your robots.",
+    "compatibleWith": "Compatible with",
+    "robotsCompatible": "{count} compatible robot{plural}",
+    "noVersionAvailable": "No version available",
+    "confirmPurchase": "Confirm purchase",
+    "aboutToBuy": "You are about to buy",
+    "for": "for",
+    "total": "Total",
+    "paymentSimulation": "This is a payment simulation. No real transaction will be made.",
+    "pay": "Pay",
+    "processing": "Processing...",
+    "chooseRobot": "Choose a robot",
+    "selectRobotToInstall": "Select the robot on which to install",
+    "selectRobot": "Select a robot",
+    "robotWithoutName": "Robot without name",
+    "serialNumber": "Serial number",
+    "installing": "Installing...",
+    "paymentSuccess": "Payment successful!",
+    "transaction": "Transaction",
+    "skillInstalled": "Skill installed successfully!",
+    "skillAvailableOnRobot": "The skill is now available on your robot.",
+    "paymentError": "Payment error",
+    "downloadError": "Download error",
+    "addRobotFirst": "You must first add and pair a robot",
+    "add": "Add"
+  },
+  "errors": {
+    "notFound": {
+      "title": "Page not found",
+      "description": "The page you are looking for does not exist or has been moved.",
+      "backHome": "Back to home"
+    },
+    "generic": {
+      "title": "An error occurred",
+      "description": "Please try again later or contact support if the problem persists."
+    }
+  },
+  "blog": {
+    "title": "News & Resources",
+    "subtitle": "Stay informed about the latest robotics ecosystem news",
+    "viewAll": "View all articles",
+    "noArticles": "No articles available at the moment",
+    "pageTitle": "Blog",
+    "pageSubtitle": "News, tutorials and insights about RobotSkills and the robotics world.",
+    "configRequired": "Configuration required",
+    "blogNotConfigured": "The blog is not configured. Please add the NOTION_TOKEN and NOTION_DATABASE_ID environment variables.",
+    "error": "Error",
+    "loadError": "Unable to load articles. Please try again later.",
+    "articlesWithTag": "{count} article{plural} with tag \"{tag}\"",
+    "noPublishedArticles": "No published articles",
+    "comeBackSoon": "Come back soon to discover our first articles about robotics and RobotSkills.",
+    "noArticlesFound": "No articles found",
+    "noArticlesWithTag": "No articles with tag \"{tag}\". Try another filter."
+  },
+  "robots": {
+    "title": "My Robots",
+    "subtitle": "Manage your robots and their pairings",
+    "addRobot": "Add a robot",
+    "addFirstRobot": "Add my first robot",
+    "noRobot": "No robot",
+    "noRobotDesc": "You haven't added a robot yet. Add your first robot to start installing skills.",
+    "serialNumber": "Serial number",
+    "pairedOn": "Paired on",
+    "status": {
+      "paired": "Paired",
+      "pending": "Pending",
+      "unpaired": "Unpaired",
+      "revoked": "Revoked"
+    }
+  },
+  "downloadsPage": {
+    "title": "My Downloads",
+    "subtitle": "History of all your skill downloads",
+    "noDownloads": "No downloads",
+    "noDownloadsDesc": "You haven't downloaded any skills yet. Explore the store to discover skills for your robots.",
+    "exploreStore": "Explore the Store",
+    "viewSkill": "View skill"
+  },
+  "libraryPage": {
+    "title": "My Library",
+    "subtitle": "Manage your installed skills and downloads",
+    "installed": "Installed",
+    "downloads": "Downloads",
+    "noSkillInstalled": "No skill installed",
+    "noSkillInstalledDesc": "You haven't installed any skills yet. Explore the store to find skills for your robots.",
+    "exploreStore": "Explore the Store",
+    "uninstall": "Uninstall",
+    "on": "On",
+    "noDownloads": "No downloads",
+    "noDownloadsDesc": "You haven't downloaded any skills yet.",
+    "downloadedOn": "Downloaded on",
+    "install": "Install"
+  },
+  "profilePage": {
+    "title": "My Profile",
+    "subtitle": "Manage your personal information",
+    "personalInfo": "Personal information",
+    "personalInfoDesc": "Update your photo and profile information",
+    "profilePicture": "Profile picture",
+    "pictureFormats": "PNG, JPEG or WebP. Max 2MB.",
+    "displayName": "Display name",
+    "displayNamePlaceholder": "Your name",
+    "displayNameHelp": "This name will be visible to other users.",
+    "email": "Email",
+    "emailReadonly": "Email cannot be modified.",
+    "profileUpdated": "Profile updated",
+    "avatarUpdated": "Avatar updated",
+    "saving": "Saving...",
+    "saveChanges": "Save changes",
+    "rolesPermissions": "Roles and permissions",
+    "rolesPermissionsDesc": "Your roles on the platform",
+    "user": "User",
+    "developer": "Developer",
+    "administrator": "Administrator",
+    "active": "Active",
+    "notActivated": "Not activated",
+    "organizations": "Organizations"
+  },
+  "devSkillsPage": {
+    "title": "My Skills",
+    "skillCount": "{count} skill{plural}",
+    "publishedCount": "{count} published",
+    "newSkill": "New Skill",
+    "search": "Search...",
+    "noSkill": "No skill",
+    "noSkillDesc": "You haven't created a skill yet. Start by creating your first skill!",
+    "createFirstSkill": "Create my first skill",
+    "noDescription": "No description",
+    "version": "version",
+    "versions": "versions",
+    "manage": "Manage",
+    "continue": "Continue",
+    "status": {
+      "draft": "Draft",
+      "published": "Published",
+      "suspended": "Suspended"
+    }
+  },
+  "devSubmissionsPage": {
+    "title": "My Submissions",
+    "totalCount": "{count} submission{plural} total",
+    "filters": {
+      "all": "All",
+      "pending": "In progress",
+      "actionRequired": "Action required",
+      "completed": "Completed"
+    },
+    "noSubmission": "No submission",
+    "noSubmissionInCategory": "No submission in this category",
+    "noSubmissionDesc": "You haven't submitted any skill for validation yet.",
+    "tryOtherFilter": "Try another filter or create a new skill.",
+    "createSkill": "Create a skill",
+    "submittedOn": "Submitted on",
+    "submit": "Submit",
+    "fix": "Fix",
+    "details": "Details",
+    "statusLegend": "Status legend",
+    "status": {
+      "draft": "Draft",
+      "submitted": "Submitted",
+      "platformReview": "Auto validation",
+      "oemReview": "OEM Review",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "changesRequested": "Changes requested"
+    }
+  },
+  "docsGettingStarted": {
+    "title": "Submission Guide",
+    "description": "Learn how to submit your skill on the Robot Store",
+    "backToDocs": "Back to documentation",
+    "publishIn4Steps": "Publish your skill on the Robot Store in 4 steps.",
+    "note": "Note",
+    "noteText": "The Robot Store is a distribution platform. Skill development is done with tools provided by each manufacturer. Consult their resources to create your skill before submitting it here.",
+    "step": "Step",
+    "steps": {
+      "1": {
+        "title": "Get a developer license",
+        "description": "Sign up for the developer program and activate your annual license to access the submission platform.",
+        "details": ["Create your account on the Robot Store", "Access the developer space", "Subscribe to the developer license (€99/year)"]
+      },
+      "2": {
+        "title": "Prepare your package",
+        "description": "Build the complete package for your skill with all required elements.",
+        "details": ["ZIP package of your skill (source code or binary)", "manifest.json file with metadata", "Icon (256x256) and screenshots (min. 3)", "Description and release notes"]
+      },
+      "3": {
+        "title": "Choose target manufacturers",
+        "description": "Select the robot brands compatible with your skill.",
+        "details": ["Consult each manufacturer's resources", "Verify your skill's compatibility", "Declare required permissions"]
+      },
+      "4": {
+        "title": "Submit for validation",
+        "description": "Send your package for review by the platform and OEMs.",
+        "details": ["Automatic verification (format, security)", "Review by each targeted manufacturer", "Feedback and adjustments if necessary"]
+      }
+    },
+    "afterValidation": "After validation",
+    "afterValidationText": "Once approved by the targeted manufacturers, your skill will be published on the store and available to users with compatible robots.",
+    "becomeDeveloper": "Become a developer",
+    "usefulResources": "Useful resources",
+    "submissionGuidelines": "Submission guidelines",
+    "oemResources": "Manufacturer resources",
+    "developerFaq": "Developer FAQ",
+    "developerSpace": "Developer space"
+  },
+  "oemPortal": {
+    "title": "OEM Portal",
+    "partnerPortal": "OEM Partner Portal",
+    "restrictedAccess": "Restricted Access",
+    "restrictedAccessDesc": "This section is reserved for manufacturer partners (OEM). If you are a manufacturer, contact us to create your partner account.",
+    "contactUs": "Contact us",
+    "pendingReview": "Pending review",
+    "approved": "Approved",
+    "rejectedModifications": "Rejected/Changes",
+    "submissionsToReview": "Submissions to Review",
+    "skillsAwaitingValidation": "Skills awaiting your validation",
+    "noPendingSubmission": "No submission pending review.",
+    "submittedOn": "Submitted on",
+    "review": "Review",
+    "history": "History",
+    "processedSubmissions": "Processed submissions",
+    "view": "View",
+    "status": {
+      "pending": "Pending",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "changesRequested": "Changes requested"
+    }
+  },
+  "cookiesPage": {
+    "title": "Cookie Policy",
+    "description": "RobotSkills Cookie Policy",
+    "lastUpdated": "Last updated",
+    "whatIsCookie": "What is a cookie?",
+    "whatIsCookieText": "A cookie is a small text file stored on your device when you visit a website. Cookies allow the site to remember your actions and preferences (login, language, font size, etc.) for a certain period of time.",
+    "typesOfCookies": "Types of cookies used",
+    "essentialCookies": "Essential cookies",
+    "essentialCookiesText": "These cookies are necessary for the Platform to function. They allow:",
+    "essentialCookiesList": ["Authentication and session management", "Your account security", "Basic features to work properly"],
+    "duration": "Duration",
+    "legalBasis": "Legal basis",
+    "legitimateInterest": "Legitimate interest",
+    "consent": "Consent",
+    "performanceCookies": "Performance cookies",
+    "performanceCookiesText": "These cookies help us understand how you use the Platform:",
+    "performanceCookiesList": ["Pages visited and time spent", "Errors encountered", "Feature performance"],
+    "functionalCookies": "Functional cookies",
+    "functionalCookiesText": "These cookies improve your experience:",
+    "functionalCookiesList": ["Remembering your preferences", "Interface personalization", "Search history"],
+    "thirdPartyCookies": "Third-party cookies",
+    "thirdPartyCookiesText": "We use third-party services that may set cookies:",
+    "service": "Service",
+    "purpose": "Purpose",
+    "policy": "Policy",
+    "authentication": "Authentication",
+    "analytics": "Analytics",
+    "see": "See",
+    "manageCookies": "Cookie management",
+    "manageCookiesText": "You can manage your cookie preferences at any time:",
+    "manageCookiesList": ["Via the consent banner on our site", "In your browser settings"],
+    "disableInBrowser": "Disable cookies in your browser",
+    "refusalConsequences": "Consequences of refusal",
+    "refusalConsequencesText": "If you refuse certain cookies, some features of the Platform may not work correctly:",
+    "refusalConsequencesList": ["You will need to log in again each visit", "Your preferences will not be remembered", "Some personalized features will be disabled"],
+    "modifications": "Modifications",
+    "modificationsText": "This policy may be updated to reflect changes in our use of cookies. The last update date is shown at the top of the page.",
+    "contact": "Contact",
+    "contactText": "For any questions about our use of cookies, contact us at privacy@robotskills.io."
+  },
+  "seo": {
+    "home": {
+      "title": "RobotSkills - Robotic Skills Marketplace",
+      "description": "The reference marketplace for robotic skills and addons. Extend your robots capabilities safely."
+    },
+    "store": {
+      "title": "Store - Skills and Addons",
+      "description": "Discover all available skills for your robots. Navigation, manipulation, communication and more."
+    },
+    "about": {
+      "title": "About",
+      "description": "Discover the mission and team of RobotSkills, the reference marketplace for robotic skills."
+    }
+  }
+}

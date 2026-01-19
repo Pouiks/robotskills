@@ -16,6 +16,10 @@ interface SkillQueryResult {
   created_at: string
   price_cents: number
   is_free: boolean
+  // Champs i18n
+  name_en: string | null
+  short_description_en: string | null
+  description_md_en: string | null
   profiles: { display_name: string | null } | null
   skill_assets: {
     id: string
@@ -66,6 +70,9 @@ export async function getPublishedSkills(options?: {
       created_at,
       price_cents,
       is_free,
+      name_en,
+      short_description_en,
+      description_md_en,
       profiles!skills_owner_user_id_fkey (
         display_name
       ),
@@ -161,6 +168,10 @@ export async function getPublishedSkills(options?: {
         : null,
       downloadCount: 0, // TODO: calculer via agrégation
       compatibleOems,
+      // Champs i18n
+      nameEn: skill.name_en,
+      shortDescriptionEn: skill.short_description_en,
+      descriptionMdEn: skill.description_md_en,
     }
   })
 
@@ -190,6 +201,9 @@ export async function getSkillBySlug(slug: string): Promise<SkillWithDetails | n
       created_at,
       price_cents,
       is_free,
+      name_en,
+      short_description_en,
+      description_md_en,
       profiles!skills_owner_user_id_fkey (
         display_name
       ),
@@ -280,6 +294,10 @@ export async function getSkillBySlug(slug: string): Promise<SkillWithDetails | n
       : null,
     downloadCount: downloadCount ?? 0,
     compatibleOems,
+    // Champs i18n
+    nameEn: skill.name_en,
+    shortDescriptionEn: skill.short_description_en,
+    descriptionMdEn: skill.description_md_en,
   }
 }
 

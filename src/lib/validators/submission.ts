@@ -5,6 +5,7 @@ import { z } from 'zod'
 // ============================================
 
 export const skillIdentitySchema = z.object({
+  // Français (obligatoire)
   name: z
     .string()
     .min(3, 'Le nom doit contenir au moins 3 caractères')
@@ -38,6 +39,20 @@ export const skillIdentitySchema = z.object({
     .string()
     .min(50, 'La description longue doit contenir au moins 50 caractères')
     .max(10000, 'La description longue ne peut pas dépasser 10000 caractères'),
+  // Anglais (obligatoire)
+  nameEn: z
+    .string()
+    .min(3, 'English name must be at least 3 characters')
+    .max(50, 'English name cannot exceed 50 characters'),
+  shortDescriptionEn: z
+    .string()
+    .min(10, 'English short description must be at least 10 characters')
+    .max(140, 'English short description cannot exceed 140 characters'),
+  descriptionMdEn: z
+    .string()
+    .min(50, 'English description must be at least 50 characters')
+    .max(10000, 'English description cannot exceed 10000 characters'),
+  // URLs
   supportUrl: z.string().url('URL de support invalide').optional().or(z.literal('')),
   privacyUrl: z.string().url('URL de confidentialité invalide').optional().or(z.literal('')),
   termsUrl: z.string().url('URL des conditions invalide').optional().or(z.literal('')),

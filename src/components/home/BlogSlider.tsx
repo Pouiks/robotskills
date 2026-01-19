@@ -1,12 +1,13 @@
 'use client'
 
 import { useEffect, useState, useRef } from 'react'
-import Link from 'next/link'
 import { ArrowRight, ArrowLeft, Loader2, Newspaper } from 'lucide-react'
+import { useTranslations, useLocale } from 'next-intl'
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { BlogImage } from '@/components/blog/BlogImage'
+import { Link } from '@/i18n/navigation'
 import type { NotionPost } from '@/lib/notion/notionClient'
 
 interface BlogSliderProps {
@@ -14,6 +15,8 @@ interface BlogSliderProps {
 }
 
 export function BlogSlider({ initialPosts }: BlogSliderProps) {
+  const t = useTranslations('blog')
+  const locale = useLocale()
   const [posts, setPosts] = useState<NotionPost[]>(initialPosts || [])
   const [loading, setLoading] = useState(!initialPosts)
   const [isVisible, setIsVisible] = useState(false)
@@ -80,7 +83,7 @@ export function BlogSlider({ initialPosts }: BlogSliderProps) {
 
   function formatDate(dateString: string | null): string {
     if (!dateString) return ''
-    return new Date(dateString).toLocaleDateString('fr-FR', {
+    return new Date(dateString).toLocaleDateString(locale === 'fr' ? 'fr-FR' : 'en-US', {
       day: 'numeric',
       month: 'short',
     })
@@ -96,16 +99,12 @@ export function BlogSlider({ initialPosts }: BlogSliderProps) {
               <Newspaper className="h-5 w-5" />
               <span className="text-sm font-medium">Blog</span>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold">
-              Actualités & Ressources
-            </h2>
-            <p className="text-muted-foreground mt-2">
-              Restez informé des dernières nouveautés de l'écosystème robotique
-            </p>
+            <h2 className="text-3xl md:text-4xl font-bold">{t('title')}</h2>
+            <p className="text-muted-foreground mt-2">{t('subtitle')}</p>
           </div>
           <Button variant="outline" asChild className="shrink-0">
             <Link href="/blog">
-              Voir tous les articles
+              {t('viewAll')}
               <ArrowRight className="h-4 w-4 ml-2" />
             </Link>
           </Button>
@@ -122,7 +121,7 @@ export function BlogSlider({ initialPosts }: BlogSliderProps) {
         {!loading && visiblePosts.length === 0 && (
           <div className="text-center py-16">
             <Newspaper className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
-            <p className="text-muted-foreground">Aucun article disponible pour le moment</p>
+            <p className="text-muted-foreground">{t('noArticles')}</p>
           </div>
         )}
 
@@ -184,7 +183,7 @@ export function BlogSlider({ initialPosts }: BlogSliderProps) {
                           </div>
                         )}
                       </div>
-                      
+
                       <CardContent className="p-5">
                         {/* Tags */}
                         {post.tags.length > 0 && (
@@ -196,21 +195,19 @@ export function BlogSlider({ initialPosts }: BlogSliderProps) {
                             ))}
                           </div>
                         )}
-                        
+
                         {/* Title */}
                         <h3 className="font-semibold line-clamp-2 mb-2 group-hover:text-primary transition-colors">
                           {post.title}
                         </h3>
-                        
+
                         {/* Excerpt */}
                         <p className="text-sm text-muted-foreground line-clamp-2 mb-3">
                           {post.excerpt}
                         </p>
-                        
+
                         {/* Date */}
-                        <p className="text-xs text-muted-foreground">
-                          {formatDate(post.publishedAt)}
-                        </p>
+                        <p className="text-xs text-muted-foreground">{formatDate(post.publishedAt)}</p>
                       </CardContent>
                     </Card>
                   </Link>

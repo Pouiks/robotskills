@@ -1,9 +1,8 @@
 'use client'
 
-import Link from 'next/link'
 import Image from 'next/image'
-import { usePathname } from 'next/navigation'
-import { Menu, Search, User, LogOut, Settings, Package, Cpu, Store, BookOpen, Code, FileText, Building2, Mail, Shield } from 'lucide-react'
+import { useTranslations } from 'next-intl'
+import { Menu, Search, User, LogOut, Settings, Package, Cpu, Store, BookOpen, Code, FileText, Building2, Mail } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import {
   DropdownMenu,
@@ -15,39 +14,42 @@ import {
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { cn } from '@/lib/utils'
+import { Link, usePathname } from '@/i18n/navigation'
+import { LanguageSelector } from './language-selector'
 import type { CurrentUser } from '@/types'
 
 interface HeaderProps {
   user: CurrentUser | null
 }
 
-const navigation = [
-  { name: 'Store', href: '/store', icon: Store },
-  { name: 'Blog', href: '/blog', icon: BookOpen },
-]
-
-const mobileFooterLinks = {
-  product: [
-    { name: 'Catégories', href: '/store?view=categories' },
-    { name: 'Populaires', href: '/store?sort=popular' },
-    { name: 'Nouveautés', href: '/store?sort=recent' },
-  ],
-  developers: [
-    { name: 'Programme Développeur', href: '/dev', icon: Code },
-    { name: 'Documentation', href: '/docs', icon: FileText },
-  ],
-  company: [
-    { name: 'À propos', href: '/about', icon: Building2 },
-    { name: 'Contact', href: '/contact', icon: Mail },
-  ],
-  legal: [
-    { name: 'Confidentialité', href: '/privacy' },
-    { name: 'CGU', href: '/terms' },
-  ],
-}
-
 export function Header({ user }: HeaderProps) {
   const pathname = usePathname()
+  const t = useTranslations()
+
+  const navigation = [
+    { name: t('header.store'), href: '/store', icon: Store },
+    { name: t('header.blog'), href: '/blog', icon: BookOpen },
+  ]
+
+  const mobileFooterLinks = {
+    product: [
+      { name: t('footer.categories'), href: '/store?view=categories' },
+      { name: t('footer.popular'), href: '/store?sort=popular' },
+      { name: t('footer.new'), href: '/store?sort=recent' },
+    ],
+    developers: [
+      { name: t('footer.developerProgram'), href: '/dev', icon: Code },
+      { name: t('footer.documentation'), href: '/docs', icon: FileText },
+    ],
+    company: [
+      { name: t('footer.about'), href: '/about', icon: Building2 },
+      { name: t('footer.contact'), href: '/contact', icon: Mail },
+    ],
+    legal: [
+      { name: t('footer.privacy'), href: '/privacy' },
+      { name: t('footer.terms'), href: '/terms' },
+    ],
+  }
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -90,9 +92,12 @@ export function Header({ user }: HeaderProps) {
           <Button variant="ghost" size="icon" className="hidden sm:flex" asChild>
             <Link href="/store">
               <Search className="h-5 w-5" />
-              <span className="sr-only">Rechercher</span>
+              <span className="sr-only">{t('common.search')}</span>
             </Link>
           </Button>
+
+          {/* Language Selector */}
+          <LanguageSelector />
 
           {user ? (
             <>
@@ -121,19 +126,19 @@ export function Header({ user }: HeaderProps) {
                   <DropdownMenuItem asChild>
                     <Link href="/dashboard">
                       <User className="mr-2 h-4 w-4" />
-                      Dashboard
+                      {t('common.dashboard')}
                     </Link>
                   </DropdownMenuItem>
                   <DropdownMenuItem asChild>
                     <Link href="/dashboard/robots">
                       <Cpu className="mr-2 h-4 w-4" />
-                      Mes Robots
+                      {t('common.myRobots')}
                     </Link>
                   </DropdownMenuItem>
                   <DropdownMenuItem asChild>
                     <Link href="/dashboard/library">
                       <Package className="mr-2 h-4 w-4" />
-                      Ma Bibliothèque
+                      {t('common.myLibrary')}
                     </Link>
                   </DropdownMenuItem>
                   {user.isDeveloper && (
@@ -142,7 +147,7 @@ export function Header({ user }: HeaderProps) {
                       <DropdownMenuItem asChild>
                         <Link href="/dev">
                           <Settings className="mr-2 h-4 w-4" />
-                          Portail Développeur
+                          {t('common.developerPortal')}
                         </Link>
                       </DropdownMenuItem>
                     </>
@@ -151,7 +156,7 @@ export function Header({ user }: HeaderProps) {
                     <DropdownMenuItem asChild>
                       <Link href="/oem">
                         <Settings className="mr-2 h-4 w-4" />
-                        Portail OEM
+                        {t('common.oemPortal')}
                       </Link>
                     </DropdownMenuItem>
                   )}
@@ -159,7 +164,7 @@ export function Header({ user }: HeaderProps) {
                     <DropdownMenuItem asChild>
                       <Link href="/admin">
                         <Settings className="mr-2 h-4 w-4" />
-                        Administration
+                        {t('common.administration')}
                       </Link>
                     </DropdownMenuItem>
                   )}
@@ -168,7 +173,7 @@ export function Header({ user }: HeaderProps) {
                     <form action="/api/auth/signout" method="POST" className="w-full">
                       <button type="submit" className="flex w-full items-center">
                         <LogOut className="mr-2 h-4 w-4" />
-                        Déconnexion
+                        {t('common.logout')}
                       </button>
                     </form>
                   </DropdownMenuItem>
@@ -178,10 +183,10 @@ export function Header({ user }: HeaderProps) {
           ) : (
             <div className="flex items-center gap-2">
               <Button variant="ghost" asChild className="hidden sm:flex">
-                <Link href="/login">Connexion</Link>
+                <Link href="/login">{t('common.login')}</Link>
               </Button>
               <Button asChild>
-                <Link href="/login?mode=signup">S&apos;inscrire</Link>
+                <Link href="/login?mode=signup">{t('common.signup')}</Link>
               </Button>
             </div>
           )}
@@ -191,11 +196,11 @@ export function Header({ user }: HeaderProps) {
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="md:hidden">
                 <Menu className="h-5 w-5" />
-                <span className="sr-only">Menu</span>
+                <span className="sr-only">{t('common.menu')}</span>
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[350px] flex flex-col p-0">
-              <SheetTitle className="sr-only">Menu de navigation</SheetTitle>
+              <SheetTitle className="sr-only">{t('header.navigation')}</SheetTitle>
               {/* Header du menu mobile */}
               <div className="p-6 border-b">
                 <Link href="/" className="flex items-center gap-3">
@@ -236,7 +241,7 @@ export function Header({ user }: HeaderProps) {
                 {/* Section Développeurs */}
                 <div className="mt-6">
                   <h3 className="px-4 text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">
-                    Développeurs
+                    {t('footer.developers')}
                   </h3>
                   <div className="space-y-1">
                     {mobileFooterLinks.developers.map((item) => {
@@ -258,7 +263,7 @@ export function Header({ user }: HeaderProps) {
                 {/* Section Entreprise */}
                 <div className="mt-6">
                   <h3 className="px-4 text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">
-                    Entreprise
+                    {t('footer.company')}
                   </h3>
                   <div className="space-y-1">
                     {mobileFooterLinks.company.map((item) => {
@@ -277,14 +282,19 @@ export function Header({ user }: HeaderProps) {
                   </div>
                 </div>
 
+                {/* Language Selector in Mobile */}
+                <div className="mt-6 px-4">
+                  <LanguageSelector variant="full" />
+                </div>
+
                 {/* Connexion si pas connecté */}
                 {!user && (
                   <div className="mt-6 space-y-2">
                     <Button asChild className="w-full">
-                      <Link href="/login?mode=signup">S&apos;inscrire</Link>
+                      <Link href="/login?mode=signup">{t('common.signup')}</Link>
                     </Button>
                     <Button variant="outline" asChild className="w-full">
-                      <Link href="/login">Connexion</Link>
+                      <Link href="/login">{t('common.login')}</Link>
                     </Button>
                   </div>
                 )}
