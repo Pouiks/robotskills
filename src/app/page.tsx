@@ -7,6 +7,7 @@ import { DynamicStats } from '@/components/home/DynamicStats'
 import { InterestCTAButton } from '@/components/home/InterestCTAButton'
 import { VisitorTracker } from '@/components/home/VisitorTracker'
 import { FAQ } from '@/components/home/FAQ'
+import { SkillsBackground } from '@/components/background/SkillsBackground'
 import { getSiteStats } from '@/server/stats'
 import { queryPublishedPosts, isNotionConfigured } from '@/lib/notion/notionClient'
 
@@ -64,8 +65,10 @@ export default async function HomePage() {
       <VisitorTracker />
       
       {/* Hero Section */}
-      <section className="gradient-hero py-20 md:py-32">
-        <div className="container">
+      <section className="gradient-hero py-20 md:py-32 relative overflow-hidden">
+        {/* Fond avec colonnes de skills - limité au hero */}
+        <SkillsBackground />
+        <div className="container relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary mb-6">
               <Bot className="h-4 w-4" />
